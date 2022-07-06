@@ -11,8 +11,14 @@ public class GameController : MonoBehaviour
     public string[][][] wrongAnswers = new string[3][][];
 
     public Text textQuestion;
-    
     public Image image;
+    public Text textTrueAnswer;
+    public Text textFalseAnswer_1;
+    public Text textFalseAnswer_2;
+    public Text textFalseAnswer_3;
+    
+
+
     public Sprite[] sprites_1_Quests = new Sprite[3];
     public Sprite[] sprites_2_Quests = new Sprite[3];
     public Sprite[] sprites_3_Quests = new Sprite[3];
@@ -50,7 +56,10 @@ public class GameController : MonoBehaviour
         "Да",
         "Да, до событий сериала"
         };
+
         //неверные ответы к 1 вопросу
+        //ошибка, проверить
+        /*
         wrongAnswers[0][0] = new string[] { "Нет",
         "Да",
         "Да, до событий сериала"
@@ -89,7 +98,7 @@ public class GameController : MonoBehaviour
         "Да",
         "Да, до событий сериала"
         };
-
+        */
     }
 
     void Start()
