@@ -1445,17 +1445,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1525278443}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4812f53bf7dc2e34b9f72d52c727be77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textQuestion: {fileID: 0}
-  image: {fileID: 0}
-  textTrueAnswer: {fileID: 0}
-  textFalseAnswer_1: {fileID: 0}
-  textFalseAnswer_2: {fileID: 0}
-  textFalseAnswer_3: {fileID: 0}
+  textQuestion: {fileID: 1262294909}
+  image: {fileID: 960768892}
+  textTrueAnswer: {fileID: 1224428225}
+  textFalseAnswer_1: {fileID: 1042664856}
+  textFalseAnswer_2: {fileID: 1412086695}
+  textFalseAnswer_3: {fileID: 1457989804}
   sprites_1_Quests:
   - {fileID: 0}
   - {fileID: 0}

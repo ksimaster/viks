@@ -8,7 +8,7 @@ public class GameController : MonoBehaviour
     public string[][] questions = new string[3][];
     public Sprite[][] sprites = new Sprite[3][];
     public string[][] trueAnswers = new string[3][];
-    public string[][][] wrongAnswers = new string[3][][];
+    public string[,][] wrongAnswers = new string[3,3] []; //первая цифра количество вопросов
 
     public Text textQuestion;
     public Image image;
@@ -17,12 +17,13 @@ public class GameController : MonoBehaviour
     public Text textFalseAnswer_2;
     public Text textFalseAnswer_3;
     
-
+  
 
     public Sprite[] sprites_1_Quests = new Sprite[3];
     public Sprite[] sprites_2_Quests = new Sprite[3];
     public Sprite[] sprites_3_Quests = new Sprite[3];
 
+    
     private void Awake()
     {
         //questions
@@ -59,46 +60,46 @@ public class GameController : MonoBehaviour
 
         //неверные ответы к 1 вопросу
         //ошибка, проверить
-        /*
-        wrongAnswers[0][0] = new string[] { "Нет",
+     
+        wrongAnswers[0,0] = new string[] { "Нет",
         "Да",
         "Да, до событий сериала"
         };
-        wrongAnswers[0][1] = new string[] { "Нет",
+        wrongAnswers[0,1] = new string[] { "Нет",
         "Да",
         "Да, до событий сериала"
         };
-        wrongAnswers[0][2] = new string[] { "Нет",
+        wrongAnswers[0,2] = new string[] { "Нет",
         "Да",
         "Да, до событий сериала"
         };
         //неверные ответы ко 2 вопросу
-        wrongAnswers[1][0] = new string[] { "Нет",
+        wrongAnswers[1,0] = new string[] { "Нет",
         "Да",
         "Да, до событий сериала"
         };
-        wrongAnswers[1][1] = new string[] { "Нет",
+        wrongAnswers[1,1] = new string[] { "Нет",
         "Да",
         "Да, до событий сериала"
         };
-        wrongAnswers[1][2] = new string[] { "Нет",
+        wrongAnswers[1,2] = new string[] { "Нет",
         "Да",
         "Да, до событий сериала"
         };
         //неверные ответы к 3 вопросу
-        wrongAnswers[2][0] = new string[] { "Нет",
+        wrongAnswers[2,0] = new string[] { "Нет",
         "Да",
         "Да, до событий сериала"
         };
-        wrongAnswers[2][1] = new string[] { "Нет",
+        wrongAnswers[2,1] = new string[] { "Нет",
         "Да",
         "Да, до событий сериала"
         };
-        wrongAnswers[2][2] = new string[] { "Нет",
+        wrongAnswers[2,2] = new string[] { "Нет",
         "Да",
         "Да, до событий сериала"
         };
-        */
+        
     }
 
     void Start()
