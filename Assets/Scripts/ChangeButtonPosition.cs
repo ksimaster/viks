@@ -24,11 +24,12 @@ public class ChangeButtonPosition : MonoBehaviour
     {
         
         listNumbers.Reverse(0, Mathf.RoundToInt(Random.Range(1,5)));
+       /*
         foreach (int num in listNumbers)
         {
             Debug.Log(num);
         }
-
+        */
         for (int i=0; i < buttonsPositions.Length; i++)
         {
             arrayNew[i] = buttonsPositions[listNumbers[i]];
