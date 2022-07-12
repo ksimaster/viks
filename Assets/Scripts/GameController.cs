@@ -21,9 +21,6 @@ public class GameController : MonoBehaviour
 
     private string pathFile;
 
-
-
-
     private void Awake()
     {
         numbersTasks = new int[lengthNumbersTasks];
