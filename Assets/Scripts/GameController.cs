@@ -19,13 +19,18 @@ public class GameController : MonoBehaviour
     public Text textFalseAnswer_2;
     public Text textFalseAnswer_3;
 
+    private string [] textQuestions;
+    private string [] nameImages;
+    private string [] textTrueAnswers;
+    private string[] textFalseAnswers_1;
+    private string[] textFalseAnswers_2;
+    private string[] textFalseAnswers_3;
+    private int numberTaskInGame = 0;
     private string pathFile;
 
     private void Awake()
     {
-        numbersTasks = new int[lengthNumbersTasks];
-        numbersTasksForGame = new int[lengthNumbersTasksForGame];
-
+        SetLengthArrays();
     }
 
     void Start()
@@ -34,11 +39,26 @@ public class GameController : MonoBehaviour
 
 
         RandArray();
+        ReadTasksFromJSON();
+        CreateTask();
+
     }
 
     void Update()
     {
 
+    }
+
+    public void SetLengthArrays()
+    {
+        numbersTasks = new int [lengthNumbersTasks];
+        numbersTasksForGame = new int [lengthNumbersTasksForGame];
+        textQuestions = new string [lengthNumbersTasksForGame];
+        nameImages = new string [lengthNumbersTasksForGame];
+        textTrueAnswers = new string [lengthNumbersTasksForGame];
+        textFalseAnswers_1 = new string [lengthNumbersTasksForGame];
+        textFalseAnswers_2 = new string [lengthNumbersTasksForGame];
+        textFalseAnswers_3 = new string [lengthNumbersTasksForGame];
     }
 
     public void RandArray()
@@ -64,18 +84,53 @@ public class GameController : MonoBehaviour
             numbersTasksForGame[i] = numbersTasks[i];
         }
         // отражение массива для игры в консоли
-        foreach (int num in numbersTasksForGame)
+       /* foreach (int num in numbersTasksForGame)
         {
             Debug.Log(num);
         }
+        */
 
     }
-
-    public void CreateTasks()
+    public void CreateTask()
     {
-        pathFile = Application.streamingAssetsPath + "/" + "testingArray.json";
-        JsonArrayTrue.List[] jsonArrayMap = JsonHelper.FromJson<JsonArrayTrue.List>(File.ReadAllText(pathFile));
-        GameObject[] images = new GameObject[jsonArrayMap.Length];
+        if (numberTaskInGame < numbersTasksForGame.Length)
+        {
+            textQuestion.text = textQuestions[numberTaskInGame];
+            image.GetComponent<Image>().sprite = Resources.Load<Sprite>(nameImages[numberTaskInGame]); ;
+            textTrueAnswer.text = textTrueAnswers[numberTaskInGame];
+            textFalseAnswer_1.text = textFalseAnswers_1[numberTaskInGame];
+            textFalseAnswer_2.text = textFalseAnswers_2[numberTaskInGame];
+            textFalseAnswer_3.text = textFalseAnswers_3[numberTaskInGame];
+            numberTaskInGame++;
+        }
+        else
+        {
+            numberTaskInGame = 0;
+            Debug.Log("Конец игры! Панель сыграй снова!");
+        }
+    }
+
+    
+   
+
+    public void ReadTasksFromJSON()
+    {
+        pathFile = Application.streamingAssetsPath + "/" + "testingArrayU.json";
+        
+        JsonArrayTrue.List[] jsonArray = JsonHelper.FromJson<JsonArrayTrue.List>(File.ReadAllText(pathFile));
+        
+        //GameObject[] images = new GameObject[jsonArrayMap.Length];
+
+
+        for (int i = 0; i < numbersTasksForGame.Length; i++)
+        {
+            nameImages[i] = jsonArray[numbersTasksForGame[i]].Id;
+            textQuestions[i] = jsonArray[numbersTasksForGame[i]].Question;
+            textTrueAnswers[i] = jsonArray[numbersTasksForGame[i]].TrueAnswer;
+            textFalseAnswers_1[i] = jsonArray[numbersTasksForGame[i]].WrongAnswer_1;
+            textFalseAnswers_2[i] = jsonArray[numbersTasksForGame[i]].WrongAnswer_2;
+            textFalseAnswers_3[i] = jsonArray[numbersTasksForGame[i]].WrongAnswer_3;
+        }
 
         /*
         for (int i = 0; i < jsonArrayMap.Length; i++)
@@ -91,6 +146,8 @@ public class GameController : MonoBehaviour
         */
     }
 }
+
+
 
 [System.Serializable]
 public class JsonArrayTrue
