@@ -27,10 +27,12 @@ public class GameController : MonoBehaviour
     private string[] textFalseAnswers_3;
     private int numberTaskInGame = 0;
     private string pathFile;
+    private int[] prefArray;
+    private bool isPrefArray = false;
 
     private void Awake()
     {
-        SetLengthArrays();
+        SetForStart();
     }
 
     void Start()
@@ -49,7 +51,7 @@ public class GameController : MonoBehaviour
 
     }
 
-    public void SetLengthArrays()
+    public void SetForStart()
     {
         numbersTasks = new int [lengthNumbersTasks];
         numbersTasksForGame = new int [lengthNumbersTasksForGame];
@@ -59,18 +61,32 @@ public class GameController : MonoBehaviour
         textFalseAnswers_1 = new string [lengthNumbersTasksForGame];
         textFalseAnswers_2 = new string [lengthNumbersTasksForGame];
         textFalseAnswers_3 = new string [lengthNumbersTasksForGame];
+        prefArray = new int[lengthNumbersTasksForGame];
+        if (prefArray[0] != 0 && prefArray[1] != 0)
+        {
+            isPrefArray = true;
+            for(int i = 0; i < prefArray.Length; i++)
+            {
+                var namePref = "Task_" + i;
+                prefArray[i] = PlayerPrefs.GetInt(namePref);
+            }
+        }
+
     }
 
     public void RandArray()
     {
+        
         // заполняем массив номеров заданий от числами 0 до 99
         for (int i = 0; i < numbersTasks.Length; i++)
         {
+            if (isPrefArray) break; // если есть массив из pref, то не нужен
             numbersTasks.SetValue(i, i);
         }
         // перемешиваем массив заданий
         for (int i = numbersTasks.Length - 1; i >= 1; i--)
         {
+            if (isPrefArray) break;
             int j = rand.Next(i + 1);
 
             var temp = numbersTasks[j];
@@ -81,8 +97,13 @@ public class GameController : MonoBehaviour
         //заполняем массив для игры первыми числами массива заданий
         for (int i = 0; i < numbersTasksForGame.Length; i++)
         {
-            numbersTasksForGame[i] = numbersTasks[i];
+            if (isPrefArray) break;
+            numbersTasksForGame[i] = numbersTasks[i]; // написание сохранения, пока без теста и get
+            prefArray[i] = numbersTasks[i]; 
+            var namePref = "Task_" + i;
+            PlayerPrefs.SetInt(namePref, numbersTasksForGame[i]);
         }
+
         // отражение массива для игры в консоли
        /* foreach (int num in numbersTasksForGame)
         {
@@ -93,8 +114,10 @@ public class GameController : MonoBehaviour
     }
     public void CreateTask()
     {
+        numberTaskInGame = PlayerPrefs.HasKey("numberTask") ? PlayerPrefs.GetInt("numberTask") : 0;
         if (numberTaskInGame < numbersTasksForGame.Length)
         {
+            
             textQuestion.text = textQuestions[numberTaskInGame];
             image.GetComponent<Image>().sprite = Resources.Load<Sprite>(nameImages[numberTaskInGame]); ;
             textTrueAnswer.text = textTrueAnswers[numberTaskInGame];
@@ -102,6 +125,7 @@ public class GameController : MonoBehaviour
             textFalseAnswer_2.text = textFalseAnswers_2[numberTaskInGame];
             textFalseAnswer_3.text = textFalseAnswers_3[numberTaskInGame];
             numberTaskInGame++;
+            PlayerPrefs.SetInt("numberTask", numberTaskInGame);
         }
         else
         {
