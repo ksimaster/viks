@@ -334,7 +334,6 @@ GameObject:
   - component: {fileID: 375748189}
   - component: {fileID: 375748191}
   - component: {fileID: 375748190}
-  - component: {fileID: 375748192}
   - component: {fileID: 375748193}
   - component: {fileID: 375748194}
   m_Layer: 5
@@ -402,21 +401,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 375748188}
   m_CullTransparentMesh: 1
---- !u!114 &375748192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 375748188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8094ce4303d8c774b96aeef83b26bfa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  replaceColor: {r: 1, g: 0, b: 0, a: 1}
-  returnColor: {r: 1, g: 1, b: 0, a: 1}
-  imageAnswer: {fileID: 375748190}
 --- !u!114 &375748193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -436,15 +420,15 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 0, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 1, g: 0, b: 0, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
+    m_FadeDuration: 0.05
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
@@ -461,18 +445,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 375748192}
-        m_TargetAssemblyTypeName: ChangeOnClick, Assembly-CSharp
-        m_MethodName: ChangeColor
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 375748194}
         m_TargetAssemblyTypeName: Counter, Assembly-CSharp
         m_MethodName: Add
@@ -500,18 +472,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1525278444}
         m_TargetAssemblyTypeName: GameController, Assembly-CSharp
         m_MethodName: CreateTask
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 375748192}
-        m_TargetAssemblyTypeName: ChangeOnClick, Assembly-CSharp
-        m_MethodName: ReturnColor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1061,7 +1021,6 @@ GameObject:
   - component: {fileID: 984071983}
   - component: {fileID: 984071985}
   - component: {fileID: 984071984}
-  - component: {fileID: 984071986}
   - component: {fileID: 984071987}
   - component: {fileID: 984071988}
   m_Layer: 5
@@ -1129,21 +1088,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984071982}
   m_CullTransparentMesh: 1
---- !u!114 &984071986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 984071982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8094ce4303d8c774b96aeef83b26bfa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  replaceColor: {r: 0, g: 1, b: 0, a: 1}
-  returnColor: {r: 1, g: 1, b: 0, a: 1}
-  imageAnswer: {fileID: 984071984}
 --- !u!114 &984071987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1163,15 +1107,15 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 0, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0, g: 1, b: 0, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
+    m_FadeDuration: 0.05
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
@@ -1188,18 +1132,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 984071986}
-        m_TargetAssemblyTypeName: ChangeOnClick, Assembly-CSharp
-        m_MethodName: ChangeColor
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 984071988}
         m_TargetAssemblyTypeName: Counter, Assembly-CSharp
         m_MethodName: Add
@@ -1227,18 +1159,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1525278444}
         m_TargetAssemblyTypeName: GameController, Assembly-CSharp
         m_MethodName: CreateTask
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 984071986}
-        m_TargetAssemblyTypeName: ChangeOnClick, Assembly-CSharp
-        m_MethodName: ReturnColor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2239,7 +2159,6 @@ GameObject:
   - component: {fileID: 1429211281}
   - component: {fileID: 1429211283}
   - component: {fileID: 1429211282}
-  - component: {fileID: 1429211284}
   - component: {fileID: 1429211285}
   - component: {fileID: 1429211286}
   m_Layer: 5
@@ -2307,21 +2226,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1429211280}
   m_CullTransparentMesh: 1
---- !u!114 &1429211284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1429211280}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8094ce4303d8c774b96aeef83b26bfa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  replaceColor: {r: 1, g: 0, b: 0, a: 1}
-  returnColor: {r: 1, g: 1, b: 0, a: 1}
-  imageAnswer: {fileID: 1429211282}
 --- !u!114 &1429211285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2341,15 +2245,15 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 0, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 1, g: 0, b: 0, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
+    m_FadeDuration: 0.05
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
@@ -2366,18 +2270,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429211284}
-        m_TargetAssemblyTypeName: ChangeOnClick, Assembly-CSharp
-        m_MethodName: ChangeColor
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1429211286}
         m_TargetAssemblyTypeName: Counter, Assembly-CSharp
         m_MethodName: Add
@@ -2405,18 +2297,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1525278444}
         m_TargetAssemblyTypeName: GameController, Assembly-CSharp
         m_MethodName: CreateTask
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1429211284}
-        m_TargetAssemblyTypeName: ChangeOnClick, Assembly-CSharp
-        m_MethodName: ReturnColor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2714,7 +2594,6 @@ GameObject:
   - component: {fileID: 1620463501}
   - component: {fileID: 1620463503}
   - component: {fileID: 1620463502}
-  - component: {fileID: 1620463504}
   - component: {fileID: 1620463505}
   - component: {fileID: 1620463506}
   m_Layer: 5
@@ -2782,21 +2661,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1620463500}
   m_CullTransparentMesh: 1
---- !u!114 &1620463504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1620463500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8094ce4303d8c774b96aeef83b26bfa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  replaceColor: {r: 1, g: 0, b: 0, a: 1}
-  returnColor: {r: 1, g: 1, b: 0, a: 1}
-  imageAnswer: {fileID: 1620463502}
 --- !u!114 &1620463505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2816,15 +2680,15 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 0, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 1, g: 0, b: 0, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
+    m_FadeDuration: 0.05
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
@@ -2841,18 +2705,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1620463504}
-        m_TargetAssemblyTypeName: ChangeOnClick, Assembly-CSharp
-        m_MethodName: ChangeColor
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1620463506}
         m_TargetAssemblyTypeName: Counter, Assembly-CSharp
         m_MethodName: Add
@@ -2880,18 +2732,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1525278444}
         m_TargetAssemblyTypeName: GameController, Assembly-CSharp
         m_MethodName: CreateTask
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1620463504}
-        m_TargetAssemblyTypeName: ChangeOnClick, Assembly-CSharp
-        m_MethodName: ReturnColor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

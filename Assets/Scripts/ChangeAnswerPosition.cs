@@ -65,7 +65,6 @@ public class ChangeAnswerPosition : MonoBehaviour
 
     public void ChangeForNewTask()
     {
-        
         RandomChange();
         SetAnswersPositions();
     }

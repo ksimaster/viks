@@ -12,11 +12,19 @@ public class ChangeOnClick : MonoBehaviour
     public void ChangeColor()
     {
         imageAnswer.color = replaceColor;
+        StartCoroutine(DelayTime(10f));
+        imageAnswer.color = returnColor;
+
     }
 
     public void ReturnColor()
     {
         imageAnswer.color = returnColor;
+    }
+
+    IEnumerator DelayTime(float delay)
+    {
+        yield return new WaitForSeconds(delay);
     }
 
 }
