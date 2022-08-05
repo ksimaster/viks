@@ -1,0 +1,325 @@
+{
+  "List": [
+    {
+      "Id": "0",
+      "Question": "Тор - это фильм по вселенной ...",
+      "TrueAnswer": "Марвел",
+      "WrongAnswer_1": "DC",
+      "WrongAnswer_2": "Star wars",
+      "WrongAnswer_3": "Star Trek"
+    },
+    {
+      "Id": "1",
+      "Question": "Как зовут актёра сыгравшего Тора?",
+      "TrueAnswer": "Крис Хемсворт",
+      "WrongAnswer_1": "Арнольд Шварценегер",
+      "WrongAnswer_2": "Сильвестр Сталоне",
+      "WrongAnswer_3": "Дженсен Эклс"
+    },
+    {
+      "Id": "2",
+      "Question": "Как зовут девушку Тора?",
+      "TrueAnswer": "Джейн Фостер",
+      "WrongAnswer_1": "Джейн Эйр",
+      "WrongAnswer_2": "Падме Амидала",
+      "WrongAnswer_3": "Кира Найтли"
+    },
+    {
+      "Id": "3",
+      "Question": "Как зовут брата Тора?",
+      "TrueAnswer": "Локи",
+      "WrongAnswer_1": "Хьюи",
+      "WrongAnswer_2": "Кал Эл",
+      "WrongAnswer_3": "Один"
+    },
+    {
+      "Id": "4",
+      "Question": "Кем приходится Тору женщина на фото?",
+      "TrueAnswer": "Мама",
+      "WrongAnswer_1": "Сноха",
+      "WrongAnswer_2": "Дочь",
+      "WrongAnswer_3": "Сестра"
+    },
+    {
+      "Id": "5",
+      "Question": "Как зовут рыжую знакомую Тора на картинке?",
+      "TrueAnswer": "Наташа",
+      "WrongAnswer_1": "Рыжая Соня",
+      "WrongAnswer_2": "Маша",
+      "WrongAnswer_3": "Люси"
+    },
+    {
+      "Id": "6",
+      "Question": "После чего наши герои пошли поесть на этой картинке?",
+      "TrueAnswer": "Победы над Читаури",
+      "WrongAnswer_1": "Проигрыша Джокеру",
+      "WrongAnswer_2": "Ужасного поражения",
+      "WrongAnswer_3": "Свадьбы Маши"
+    },
+    {
+      "Id": "7",
+      "Question": "Кем приходится бородатый дяденька Тору?",
+      "TrueAnswer": "Отцом",
+      "WrongAnswer_1": "Клоном",
+      "WrongAnswer_2": "Врагом",
+      "WrongAnswer_3": "Другом Отца"
+    },
+    {
+      "Id": "8",
+      "Question": "Смог поднять молот Тора! Как зовут?",
+      "TrueAnswer": "Капитан Америка",
+      "WrongAnswer_1": "Майор Гром",
+      "WrongAnswer_2": "Супермен",
+      "WrongAnswer_3": "Круглый щит"
+    },
+    {
+      "Id": "9",
+      "Question": "Что за героиня на заднем плане?",
+      "TrueAnswer": "Леди Сиф",
+      "WrongAnswer_1": "Амазонка",
+      "WrongAnswer_2": "Миледи",
+      "WrongAnswer_3": "Дерзкая Маша"
+    },
+    {
+      "Id": "10",
+      "Question": "Что за раса напала на Асгард в фильме Тор2?",
+      "TrueAnswer": "Темные эльфы",
+      "WrongAnswer_1": "Серые гоблины",
+      "WrongAnswer_2": "Гнустные орки",
+      "WrongAnswer_3": "Спящие люди"
+    },
+    {
+      "Id": "11",
+      "Question": "Как зовут этого актёра?",
+      "TrueAnswer": "Энтони Хопкинс",
+      "WrongAnswer_1": "Патрик Стюарт",
+      "WrongAnswer_2": "Арнольд Шварценегер",
+      "WrongAnswer_3": "Джон Траволта"
+    },
+    {
+      "Id": "12",
+      "Question": "Как зовут этого актёра?",
+      "TrueAnswer": "Питер Динклэйдж",
+      "WrongAnswer_1": "Джереми Айронс",
+      "WrongAnswer_2": "Кит Харингтон",
+      "WrongAnswer_3": "Джейсон Стэтхэм"
+    },
+    {
+      "Id": "13",
+      "Question": "Как имя этого персонажа?",
+      "TrueAnswer": "Алая Ведьма",
+      "WrongAnswer_1": "Адская Ведьма",
+      "WrongAnswer_2": "Баба Яга",
+      "WrongAnswer_3": "Красная ведьма"
+    },
+    {
+      "Id": "14",
+      "Question": "Богом чего является Тор?",
+      "TrueAnswer": "Грома и молний",
+      "WrongAnswer_1": "Молотов",
+      "WrongAnswer_2": "Ветра",
+      "WrongAnswer_3": "Любви"
+    },
+    {
+      "Id": "15",
+      "Question": "Город, в котором вырос Тор?",
+      "TrueAnswer": "Асгард",
+      "WrongAnswer_1": "Стронгхолд",
+      "WrongAnswer_2": "Вестерос",
+      "WrongAnswer_3": "Эдем"
+    },
+    {
+      "Id": "16",
+      "Question": "Кто бьет бога обмана?",
+      "TrueAnswer": "Халк",
+      "WrongAnswer_1": "Зелёный гоблин",
+      "WrongAnswer_2": "Зверь",
+      "WrongAnswer_3": "Крушила"
+    },
+    {
+      "Id": "17",
+      "Question": "Самый известный страж радужного моста?",
+      "TrueAnswer": "Хеймдалль",
+      "WrongAnswer_1": "Торин Дубощит",
+      "WrongAnswer_2": "Тор",
+      "WrongAnswer_3": "Вендиго"
+    },
+    {
+      "Id": "18",
+      "Question": "Держал Тора на прицеле?",
+      "TrueAnswer": "Соколиный глаз",
+      "WrongAnswer_1": "Зелёная стрела",
+      "WrongAnswer_2": "Барт Клинтон",
+      "WrongAnswer_3": "Меткий лук"
+    },
+    {
+      "Id": "19",
+      "Question": "Какому миру это принадлежало до асгардийцев?",
+      "TrueAnswer": "Йотунхейму",
+      "WrongAnswer_1": "Категату",
+      "WrongAnswer_2": "Фризеру",
+      "WrongAnswer_3": "Айсеру"
+    },
+    {
+      "Id": "20",
+      "Question": "Чье камео есть почти во всех фильмаъ Марвел?",
+      "TrueAnswer": "Стэн Ли",
+      "WrongAnswer_1": "Стэнли Кубрик",
+      "WrongAnswer_2": "Джеймс Ганн",
+      "WrongAnswer_3": "Стивен Спилберг"
+    },
+    {
+      "Id": "21",
+      "Question": "Кто один из самых известных агентов Щит?",
+      "TrueAnswer": "Агент Колсен",
+      "WrongAnswer_1": "Агент Смитт",
+      "WrongAnswer_2": "Бред Питт",
+      "WrongAnswer_3": "Агент Йо-Йо"
+    },
+    {
+      "Id": "22",
+      "Question": "А что это за злодей в центре?",
+      "TrueAnswer": "Танос",
+      "WrongAnswer_1": "Галактус",
+      "WrongAnswer_2": "Целестиал",
+      "WrongAnswer_3": "Термит"
+    },
+    {
+      "Id": "23",
+      "Question": "А как зовут Соколиного глаза?",
+      "TrueAnswer": "Клинт Бартон",
+      "WrongAnswer_1": "Барт Клинтон",
+      "WrongAnswer_2": "Барт Симпсон",
+      "WrongAnswer_3": "Джон Спэроу"
+    },
+    {
+      "Id": "24",
+      "Question": "Кто они Тору?",
+      "TrueAnswer": "Друзья",
+      "WrongAnswer_1": "Враги",
+      "WrongAnswer_2": "Родственники",
+      "WrongAnswer_3": "Никто"
+    },
+    {
+      "Id": "25",
+      "Question": "Как зовут актёра?",
+      "TrueAnswer": "Том Хидлстон",
+      "WrongAnswer_1": "Данила Козловский",
+      "WrongAnswer_2": "Джейсон Стэтхэм",
+      "WrongAnswer_3": "Кит Харингтон"
+    },
+    {
+      "Id": "26",
+      "Question": "Кто победит Тор или великан?",
+      "TrueAnswer": "Тор",
+      "WrongAnswer_1": "Великан",
+      "WrongAnswer_2": "Оба проиграют",
+      "WrongAnswer_3": "Оба победят"
+    },
+    {
+      "Id": "27",
+      "Question": "Кто ещё оказался достоин поднять молот?",
+      "TrueAnswer": "Вижен",
+      "WrongAnswer_1": "Альтрон",
+      "WrongAnswer_2": "Синестро",
+      "WrongAnswer_3": "Джарвис"
+    },
+    {
+      "Id": "28",
+      "Question": "Что это за красивая девушка из фильма?",
+      "TrueAnswer": "Леди Сиф",
+      "WrongAnswer_1": "Зена",
+      "WrongAnswer_2": "Калисто",
+      "WrongAnswer_3": "Гера"
+    },
+    {
+      "Id": "29",
+      "Question": "Кадр из какого фильма?",
+      "TrueAnswer": "Тор 2",
+      "WrongAnswer_1": "Война Бесконечности",
+      "WrongAnswer_2": "Тор: Любовь и Гром",
+      "WrongAnswer_3": "Тор"
+    },
+    {
+      "Id": "30",
+      "Question": "Дальняя знакомая Тора на картинке",
+      "TrueAnswer": "Небула",
+      "WrongAnswer_1": "Гамора",
+      "WrongAnswer_2": "Фембот",
+      "WrongAnswer_3": "Наташа"
+    },
+    {
+      "Id": "31",
+      "Question": "Что за персонаж?",
+      "TrueAnswer": "Эрик Селвиг",
+      "WrongAnswer_1": "Густав Скарсгард",
+      "WrongAnswer_2": "Доктор Нимнул",
+      "WrongAnswer_3": "Профессор Икс"
+    },
+    {
+      "Id": "32",
+      "Question": "Девушка, что помогла Тору?",
+      "TrueAnswer": "Валькирия",
+      "WrongAnswer_1": "Стражница",
+      "WrongAnswer_2": "Зена",
+      "WrongAnswer_3": "Леди Диана"
+    },
+    {
+      "Id": "33",
+      "Question": "Что за злодей на троне?",
+      "TrueAnswer": "Танос",
+      "WrongAnswer_1": "Целестиал",
+      "WrongAnswer_2": "Эго",
+      "WrongAnswer_3": "Синяя Борода"
+    },
+    {
+      "Id": "34",
+      "Question": "Как зовут персонажа Карла Урбана?",
+      "TrueAnswer": "Скурдж",
+      "WrongAnswer_1": "Скрудж",
+      "WrongAnswer_2": "Бутчер",
+      "WrongAnswer_3": "Пастырь"
+    },
+    {
+      "Id": "35",
+      "Question": "Что за воительницы на пегасах?",
+      "TrueAnswer": "Валькирии",
+      "WrongAnswer_1": "Наездницы",
+      "WrongAnswer_2": "Летучий эскадрон",
+      "WrongAnswer_3": "Женская бригада"
+    },
+    {
+      "Id": "36",
+      "Question": "Что за знакомый Тора на заднем плане?",
+      "TrueAnswer": "Доктор Стрэндж",
+      "WrongAnswer_1": "Маг Калиостро",
+      "WrongAnswer_2": "Слепой мудрец",
+      "WrongAnswer_3": "Железный человек"
+    },
+    {
+      "Id": "37",
+      "Question": "А это что за ребята на заднем плане?",
+      "TrueAnswer": "Стражи Галактики",
+      "WrongAnswer_1": "Стражи космоса",
+      "WrongAnswer_2": "Стражи Вселенной",
+      "WrongAnswer_3": "Космические пираты"
+    },
+    {
+      "Id": "38",
+      "Question": "Зелёный друг с работы?",
+      "TrueAnswer": "Халк",
+      "WrongAnswer_1": "Зелёный зверь",
+      "WrongAnswer_2": "Крушила",
+      "WrongAnswer_3": "Мистер Панч"
+    },
+    {
+      "Id": "39",
+      "Question": "А это кто смотрит на Тора?",
+      "TrueAnswer": "Суртур",
+      "WrongAnswer_1": "Люцифер",
+      "WrongAnswer_2": "Король ада",
+      "WrongAnswer_3": "Инферно"
+    }
+  ]
+	
+}

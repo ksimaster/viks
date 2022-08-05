@@ -7,7 +7,7 @@ using System.IO;
 
 public class GameController : MonoBehaviour
 {
-    private int lengthNumbersTasks = 100;
+    private int lengthNumbersTasks = 39;
     private int lengthNumbersTasksForGame = 20;
     public int[] numbersTasks;
     public int[] numbersTasksForGame;
@@ -138,7 +138,7 @@ public class GameController : MonoBehaviour
 
     public void ReadTasksFromJSON()
     {
-        pathFile = Application.streamingAssetsPath + "/" + "testingArrayU.json";
+        pathFile = Application.streamingAssetsPath + "/" + "TorJSON.json";
         
         JsonArrayTrue.List[] jsonArray = JsonHelper.FromJson<JsonArrayTrue.List>(File.ReadAllText(pathFile));
         
