@@ -13,5 +13,7 @@ public class Counter : MonoBehaviour
         count = int.Parse(CounterText.text);
         count++;
         CounterText.text = count.ToString();
+        PlayerPrefs.SetString(CounterText.name, count.ToString());
     }
+
 }

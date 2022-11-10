@@ -32,23 +32,31 @@ public class GameController : MonoBehaviour
 
     private void Awake()
     {
-        SetForStart();
+        //SetForStart();
     }
 
     void Start()
     {
         // image.sprite =
 
-
+        /*
         RandArray();
         ReadTasksFromJSON();
         CreateTask();
-
+        */
     }
 
     void Update()
     {
 
+    }
+
+    public void StartGame()
+    {
+        SetForStart();
+        RandArray();
+        ReadTasksFromJSON();
+        CreateTask();
     }
 
     public void SetForStart()
